@@ -1,0 +1,9 @@
+<div class="container">
+  <button {{action 'showBillDetails'}}><h4>{{bill.official_title}}</h4></button>Date Introduced: {{bill.introduced_on}}
+  <br>
+  <br>
+  {{#if showBill}}
+    <p>Bill Sponsor: {{bill.sponsor.first_name}} {{bill.sponsor.last_name}}</p>
+  {{/if}}
+  <hr>
+</div>

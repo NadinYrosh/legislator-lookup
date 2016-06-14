@@ -1,6 +1,8 @@
-<li><button {{action 'showSubcommittees' committee}}>{{committee.name}}</button></li>
-{{#if showSub}}
-  {{#each subcommittees as |subcommittee|}}
-    <li>{{subcommittee.name}}</li>
-  {{/each}}
-{{/if}}
+<div class="container">
+  <li><a {{action 'showSubcommittees' committee}}><h3>{{committee.name}}</h3></a></li>
+  {{#if showSub}}
+    {{#each subcommittees as |subcommittee|}}
+      <h4>{{subcommittee.name}}</h4>
+    {{/each}}
+  {{/if}}
+</div>
