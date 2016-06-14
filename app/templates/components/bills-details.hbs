@@ -3,7 +3,7 @@
   <br>
   <br>
   {{#if showBill}}
-    <p>Bill Sponsor: {{bill.sponsor.first_name}} {{bill.sponsor.last_name}}</p>
+    <p>Bill Sponsor: {{#link-to 'sponsor' bill.sponsor_id}}{{bill.sponsor.first_name}} {{bill.sponsor.last_name}}{{/link-to}}</p>
   {{/if}}
   <hr>
 </div>

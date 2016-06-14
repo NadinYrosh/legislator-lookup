@@ -1,0 +1,10 @@
+<div class="container">
+  <h4>Contact information: </h4>
+  {{#each model as |legislator|}}
+    <li>Full Name: {{legislator.first_name}} {{legislator.last_name}}</li>
+    <li>Weebsite: {{legislator.website}}</li>
+    <li>Twitter: {{legislator.twitter_id}}</li>
+  {{/each}}
+  <hr>
+  {{#link-to 'index'}}<button class="btn">Home</button>{{/link-to}}
+</div>
