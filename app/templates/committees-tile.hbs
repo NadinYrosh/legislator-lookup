@@ -1,0 +1,7 @@
+<ul>
+  {{#each model as |committee|}}
+    {{comittee-details committee=committee}}
+  {{/each}}
+</ul>
+
+{{#link-to 'index'}}Home{{/link-to}}
